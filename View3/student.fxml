@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="414.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentController">
+   <children>
+      <TableView fx:id="stuTableView" layoutX="12.0" layoutY="64.0" prefHeight="299.0" prefWidth="559.0">
+        <columns>
+          <TableColumn prefWidth="70.0" text="아이디" />
+          <TableColumn prefWidth="50.0" text="이름" />
+            <TableColumn prefWidth="45.0" text="나이" />
+            <TableColumn prefWidth="127.0" text="휴대폰번호" />
+            <TableColumn prefWidth="173.0" text="주소" />
+            <TableColumn prefWidth="79.0" text="반종류" />
+            <TableColumn maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="이미지" />
+        </columns>
+      </TableView>
+      <TextField fx:id="stuTxtSearch" layoutX="12.0" layoutY="38.0" prefHeight="23.0" prefWidth="81.0" promptText="이름입력" />
+      <Button fx:id="stuBtnSearch" layoutX="95.0" layoutY="38.0" mnemonicParsing="false" text="검색" />
+      <ImageView fx:id="stuImageView" fitHeight="299.0" fitWidth="201.0" layoutX="578.0" layoutY="64.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/basicImage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="stuBtnAdd" layoutX="201.0" layoutY="374.0" mnemonicParsing="false" text="학생추가" />
+      <Button fx:id="stuBtnEdit" layoutX="281.0" layoutY="374.0" mnemonicParsing="false" text="학생수정" />
+      <Button fx:id="stuBtnDelete" layoutX="361.0" layoutY="374.0" mnemonicParsing="false" text="학생삭제" />
+      <Button fx:id="stuBtnBack" layoutX="438.0" layoutY="374.0" mnemonicParsing="false" text="뒤로가기" />
+      <Button fx:id="stuBtnClose" layoutX="515.0" layoutY="374.0" mnemonicParsing="false" text="종료" />
+      <Label layoutX="341.0" layoutY="15.0" text="학생정보" textFill="BLACK">
+         <font>
+            <Font name="Yj SHANALL Medium" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
