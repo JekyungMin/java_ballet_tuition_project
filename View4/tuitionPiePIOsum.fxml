@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="315.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <PieChart id="tuiPiePIOsum" />
+      <Button id="tuiPiePIOsumClose" mnemonicParsing="false" text="닫기">
+         <VBox.margin>
+            <Insets bottom="5.0" left="277.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

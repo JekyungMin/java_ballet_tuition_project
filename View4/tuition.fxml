@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="512.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TuitionController">
+   <children>
+      <TableView fx:id="tuiTableView" layoutX="25.0" layoutY="80.0" prefHeight="356.0" prefWidth="846.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="아이디" />
+            <TableColumn prefWidth="68.0" text="이름" />
+            <TableColumn prefWidth="73.0" text="그룹레슨" />
+            <TableColumn prefWidth="55.0" text="개인레슨" />
+            <TableColumn prefWidth="106.0" text="작품명" />
+            <TableColumn prefWidth="75.0" text="그룹레슨비" />
+            <TableColumn prefWidth="78.0" text="개인레슨비" />
+            <TableColumn prefWidth="70.0" text="작품비" />
+            <TableColumn prefWidth="94.0" text="총수업료" />
+            <TableColumn prefWidth="137.0" text="납부일" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tuiTxtSearch" layoutX="25.0" layoutY="54.0" prefHeight="23.0" prefWidth="88.0" promptText="이름입력" />
+      <Button fx:id="tuiBtnSearch" layoutX="115.0" layoutY="54.0" mnemonicParsing="false" text="검색" />
+      <ComboBox fx:id="tuiCmbPayDate" layoutX="161.0" layoutY="54.0" prefWidth="150.0" promptText="납부월 선택" />
+      <Button fx:id="tuiBtnEdit" layoutX="356.0" layoutY="473.0" mnemonicParsing="false" text="학비수정" />
+      <Button fx:id="tuiBtnDelete" layoutX="430.0" layoutY="473.0" mnemonicParsing="false" text="학비삭제" />
+      <Button fx:id="tuiBtnAdd" layoutX="280.0" layoutY="473.0" mnemonicParsing="false" text="학비추가" />
+      <Button fx:id="tuiBtnBarTotal" layoutX="737.0" layoutY="54.0" mnemonicParsing="false" text="당월 학생별 총수업료" />
+      <TextField fx:id="tuiTxtSum" layoutX="592.0" layoutY="54.0" />
+      <Label layoutX="509.0" layoutY="59.0" text="당월 총수업료" />
+      <Button fx:id="tuiBtnLineSum" layoutX="306.0" layoutY="439.0" mnemonicParsing="false" text="월별 총수업료 비교" />
+      <Button fx:id="tuiBtnScatterOprice" layoutX="178.0" layoutY="440.0" mnemonicParsing="false" text="월별 총작품비 비교" />
+      <Button fx:id="tuiBtnAreaIprice" layoutX="25.0" layoutY="440.0" mnemonicParsing="false" text="월별 총개인레슨비 비교" />
+      <Button fx:id="tuiBtnSelectedTotal" layoutX="435.0" layoutY="439.0" mnemonicParsing="false" text="월별 선택학생 총수업료" />
+      <Label layoutX="386.0" layoutY="14.0" text="학비관리" textFill="BLACK">
+         <font>
+            <Font name="Yj SHANALL Medium" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="tuiBtnBack" layoutX="504.0" layoutY="473.0" mnemonicParsing="false" text="뒤로가기" />
+      <Button fx:id="tuiBtnClose" layoutX="575.0" layoutY="472.0" mnemonicParsing="false" text="종료" />
+      <Button fx:id="tuiBtnPiePIOsum" layoutX="750.0" layoutY="439.0" mnemonicParsing="false" text="당월 총레슨비 비교" />
+   </children>
+</AnchorPane>

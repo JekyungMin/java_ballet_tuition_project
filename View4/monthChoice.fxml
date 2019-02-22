@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="111.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <DatePicker id="choiceStart" layoutX="17.0" layoutY="35.0" />
+      <Label layoutX="69.0" layoutY="14.0" text="시작월" />
+      <DatePicker id="choiceEnd" layoutX="209.0" layoutY="35.0" />
+      <Label layoutX="275.0" layoutY="14.0" text="끝월" />
+      <Button id="choiceBtnChart" layoutX="165.0" layoutY="80.0" mnemonicParsing="false" text="차트보기" />
+   </children>
+</AnchorPane>

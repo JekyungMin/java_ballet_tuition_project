@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane prefHeight="477.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="377.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="96.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="256.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="아이디 :" />
+            <Label text="이름 :" GridPane.rowIndex="1" />
+            <Label text="그룹레슨 :" GridPane.rowIndex="2" />
+            <Label text="개인레슨 :" GridPane.rowIndex="3" />
+            <Label text="작품명 :" GridPane.rowIndex="4" />
+            <Label text="그룹레슨비 :" GridPane.rowIndex="5" />
+            <Label text="개인레슨비 :" GridPane.rowIndex="6" />
+            <Label text="작품비 :" GridPane.rowIndex="7" />
+            <Label text="총수업비 :" GridPane.rowIndex="8" />
+            <Label text="납부일 :" GridPane.rowIndex="9" />
+            <TextField id="addTxtStudentId" maxHeight="25.0" maxWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="1" />
+            <Button id="addBtnStudentId" mnemonicParsing="false" text="조회" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="130.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField id="addTxtName" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="addTxtParty" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox id="addCmbIndividual" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox id="addCmbOpus" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField id="addTxtPprice" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField id="addTxtIprice" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField id="addTxtOprice" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField id="addTxtTotal" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <DatePicker id="addPayDate" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button id="addBtnTotal" mnemonicParsing="false" text="합계" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="143.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="17.0" prefWidth="413.0">
+         <children>
+            <Button id="addBtnAdd" mnemonicParsing="false" text="추가" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+               <HBox.margin>
+                  <Insets bottom="18.0" left="138.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="addBtnClose" mnemonicParsing="false" text="닫기">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
