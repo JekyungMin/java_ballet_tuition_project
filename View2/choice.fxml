@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="659.0" prefWidth="425.0" styleClass="choice" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChoiceController">
+   <children>
+      <Button fx:id="choiceStudent" layoutX="36.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: black;" text="학생정보" textFill="WHITE">
+         <font>
+            <Font name="Yj SHANALL Medium" size="33.0" />
+         </font></Button>
+      <Button fx:id="choiceTuition" layoutX="216.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: black;" text="학비관리" textFill="WHITE">
+         <font>
+            <Font name="Yj SHANALL Medium" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="choiceBody" layoutX="36.0" layoutY="82.0" maxHeight="70.0" maxWidth="300.0" mnemonicParsing="false" prefHeight="30.0" style="-fx-background-color: black;" text="신체관리" textFill="WHITE">
+         <font>
+            <Font name="Yj SHANALL Medium" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="choiceLogin" layoutX="216.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: black;" text="로그인창" textFill="WHITE">
+         <font>
+            <Font name="Yj SHANALL Medium" size="33.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
