@@ -1,0 +1,9 @@
+.login{
+	-fx-background-image:url("../images/editedlogin.jpg");
+}
+.choice{
+	-fx-background-image:url("../images/anotherchoice.jpg");
+}
+#idandpassword{
+	-fx-text-fill:#F9FFFF;	
+}
