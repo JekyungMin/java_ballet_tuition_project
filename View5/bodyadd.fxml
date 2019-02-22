@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane prefHeight="477.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="377.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="96.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="256.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="아이디 :" />
+            <Label text="이름 :" GridPane.rowIndex="1" />
+            <Label text="나이 :" GridPane.rowIndex="2" />
+            <Label text="키(cm) :" GridPane.rowIndex="3" />
+            <Label text="체중(kg) :" GridPane.rowIndex="4" />
+            <Label text="근육률(%) :" GridPane.rowIndex="5" />
+            <Label text="체지방률(%) :" GridPane.rowIndex="6" />
+            <Label text="측정일 :" GridPane.rowIndex="7" />
+            <TextField id="addTxtStudentId" maxHeight="25.0" maxWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="1" />
+            <Button id="addBtnStudentId" mnemonicParsing="false" text="조회" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="130.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField id="addTxtName" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="addTxtAge" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="addTxtHeight" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField id="addTxtWeight" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField id="addTxtMuscle" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField id="addTxtFat" maxHeight="25.0" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <DatePicker id="addMeasureDate" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="17.0" prefWidth="413.0">
+         <children>
+            <Button id="addBtnExample" mnemonicParsing="false" text="예시">
+               <HBox.margin>
+                  <Insets left="107.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="addBtnAdd" mnemonicParsing="false" text="추가" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+               <HBox.margin>
+                  <Insets bottom="18.0" left="28.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="addBtnClose" mnemonicParsing="false" text="닫기">
+               <HBox.margin>
+                  <Insets left="28.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

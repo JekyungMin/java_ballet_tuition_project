@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BodyController">
+   <children>
+      <TableView fx:id="bodyTableView" layoutX="52.0" layoutY="96.0" prefHeight="327.0" prefWidth="441.0">
+        <columns>
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="아이디" />
+            <TableColumn maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="이름" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="나이" />
+          <TableColumn prefWidth="75.0" text="키(cm)" />
+          <TableColumn prefWidth="75.0" text="체중(kg)" />
+            <TableColumn prefWidth="75.0" text="근육률(%)" />
+            <TableColumn prefWidth="76.0" text="체지방률(%)" />
+            <TableColumn prefWidth="138.0" text="측정일" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="bodyCmbStudentId" layoutX="170.0" layoutY="70.0" prefHeight="23.0" prefWidth="105.0" promptText="아이디" />
+      <ComboBox fx:id="bodyCmbMeasureDate" layoutX="282.0" layoutY="70.0" prefHeight="23.0" prefWidth="105.0" promptText="년도" />
+      <TextField fx:id="bodyTxtSearch" layoutX="52.0" layoutY="70.0" prefHeight="23.0" prefWidth="70.0" promptText="이름입력" />
+      <Button fx:id="bodyBtnSearch" layoutX="125.0" layoutY="70.0" mnemonicParsing="false" text="검색" />
+      <Label layoutX="211.0" layoutY="16.0" text="신체관리" textFill="BLACK">
+         <font>
+            <Font name="Yj SHANALL Medium" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="bodyBtnAdd" layoutX="126.0" layoutY="462.0" mnemonicParsing="false" text="정보추가" />
+      <Button fx:id="bodyBtnEdit" layoutX="205.0" layoutY="462.0" mnemonicParsing="false" text="정보수정" />
+      <Button fx:id="bodyBtnDelete" layoutX="282.0" layoutY="462.0" mnemonicParsing="false" text="정보삭제" />
+      <Button fx:id="bodyBtnBack" layoutX="356.0" layoutY="462.0" mnemonicParsing="false" text="뒤로가기" />
+      <Button fx:id="bodyBtnWeight" layoutX="53.0" layoutY="427.0" mnemonicParsing="false" text="월별 체중비교" />
+      <Button fx:id="bodyBtnMuscle" layoutX="153.0" layoutY="427.0" mnemonicParsing="false" text="월별 근육률 비교" />
+      <Button fx:id="bodyBtnFat" layoutX="270.0" layoutY="427.0" mnemonicParsing="false" text="월별 체지방률 비교" />
+      <Button fx:id="bodyBtnClose" layoutX="453.0" layoutY="427.0" mnemonicParsing="false" text="종료" />
+   </children>
+</AnchorPane>
